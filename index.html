@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="team">
+        <h3>HOME</h3>
+        <div class="score" id="score-h">0</div>
+        <div class="point-container">
+          <button class="point" id="one-point-h" onclick="pointPlus1()">
+            +1
+          </button>
+          <button class="point" id="two-point-h" onclick="pointPlus2()">
+            +2
+          </button>
+          <button class="point" id="three-point-h" onclick="pointPlus3()">
+            +3
+          </button>
+        </div>
+        <h4>FOULS</h4>
+
+        <div class="foul-container">
+          <button class="foul-btn" onclick="foulDecrement()">-</button>
+          <span id="foul-counter-H">0</span>
+          <button class="foul-btn" onclick="foulIncrement()">+</button>
+        </div>
+      </div>
+
+      <div class="game-controls">
+        <div class="timer" id="timee-Display">10:00</div>
+
+        <button id="restart-btn" onclick="restart()">NEW GAME</button>
+
+        <div class="timer-buttons">
+          <button id="start-btn" onclick="timer()">START</button>
+          <button id="pause-btn" onclick="pause()">PAUSE</button>
+        </div>
+        <p id="alert"></p>
+      </div>
+      <div class="team">
+        <h3>GUEST</h3>
+        <div class="score" id="score-G">0</div>
+        <div class="point-container">
+          <button class="point" id="one-point-g" onclick="pointPlus1G()">
+            +1
+          </button>
+          <button class="point" id="two-point-g" onclick="pointPlus2G()">
+            +2
+          </button>
+          <button class="point" id="three-point-g" onclick="pointPlus3G()">
+            +3
+          </button>
+        </div>
+        <h4>FOULS</h4>
+
+        <div class="foul-container">
+          <button class="foul-btn" onclick="foulDecrementG()">-</button>
+          <span id="foul-counter-G">0</span>
+          <button class="foul-btn" onclick="foulIncrementG()">+</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
